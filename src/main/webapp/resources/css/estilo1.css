@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+.rotulo{
+  font-family: Arial, Sans-serif;	
+  text-transform: uppercase;
+  font-size: 12pt;	
+}
+.entrada{
+  border: 1px inset;
+  display: block;	
+}
+
+
+
+

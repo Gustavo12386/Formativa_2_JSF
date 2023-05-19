@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+xmlns:h="http://xmlns.jcp.org/jsf/html">
+<h:head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Transação Bancaria</title>
+<h:outputStylesheet library="css" name="estilo1.css"/>
+</h:head>
+<h:body>
+  <h:form>
+     <p class="rotulo">
+         Código:
+         <h:inputText value="#{dados.codigo}" class="entrada"/>
+      </p>    
+      <p class="rotulo">
+         Data:
+         <h:inputText value="#{dados.data}" class="entrada"/>
+      </p>    
+       <p class="rotulo">
+         Tipo da transação:
+         <h:inputText value="#{dados.tipo_transacao}" class="entrada"/>
+      </p>
+       <p class="rotulo">
+         Tipo da Conta:
+         <h:inputText value="#{dados.tipo_conta_cliente}" class="entrada"/>
+      </p>
+      <p class="botao">
+         <h:commandButton value="Submit" action="transação"/>
+      </p> 
+  </h:form>
+  <p id="resultado">
+      Transação Cadastrada: <br /> Código: "#{dados.codigo}" <br />
+      Data: "#{dados.data}" <br />
+      Tipo da Transação: "#{dados.tipo_transacao}" <br /> Tipo da Conta:
+      "#{dados.tipo_conta_cliente}" <br />   
+   </p>   
+</h:body>
+</html>
